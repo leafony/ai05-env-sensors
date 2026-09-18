@@ -1,4 +1,5 @@
 (fp_lib_table
 	(version 7)
+	(lib (name "AI05") (type "KiCad") (uri "${KIPRJMOD}/lib/AI05.pretty") (options "") (descr "AI05 Env Sensors footprints"))
 	(lib (name "Leafony") (type "KiCad") (uri "${KIPRJMOD}/lib/Leafony.pretty") (options "") (descr ""))
 )

@@ -1,3 +1,5 @@
 (sym_lib_table
 	(version 7)
+	(lib (name "AI05") (type "KiCad") (uri "${KIPRJMOD}/lib/AI05.kicad_sym") (options "") (descr "AI05 Env Sensors components"))
+	(lib (name "Leafony") (type "KiCad") (uri "${KIPRJMOD}/lib/Leafony.kicad_sym") (options "") (descr "Leafony Bus"))
 )

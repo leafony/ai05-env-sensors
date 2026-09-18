@@ -532,7 +532,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "leafony_template.kicad_pro",
+    "filename": "ai05-env-sensors.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -701,18 +701,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "leafony_template.kicad_sch",
-        "name": "leafony_template",
+        "filename": "ai05-env-sensors.kicad_sch",
+        "name": "ai05-env-sensors",
         "uuid": "e2743b78-cc59-458c-8fb0-4238f348a49f"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U1-5",
     "variants": []
   },
   "sheets": [
     [
       "e2743b78-cc59-458c-8fb0-4238f348a49f",
-      "leafony_template"
+      "ai05-env-sensors"
     ]
   ],
   "text_variables": {},

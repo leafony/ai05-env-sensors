@@ -1,0 +1,841 @@
+(kicad_symbol_lib (version 20251024) (generator "kicad_symbol_editor") (generator_version "10.0")
+(symbol "SHT40-AD1B-R2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SHT40-AD1B-R2"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "AI05:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+			(at 3.81 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://sensirion.com/resource/datasheet/sht4x"
+			(at 3.81 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "SENSOR HUMIDITY 100 RH SMD"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Sensirion environment environmental measurement digital SHT40 SHT41 SHT45"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SHT40-AD1B-R2_1_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin bidirectional line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -7.62 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+
+  (property "MPN" "SHT40-AD1B-R2" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "Sensirion AG" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "1.88 USD" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R2/13532084" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol "SGP40-D-R4"
+      (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -7.62 15.24 0)  (effects (font (size 1.27 1.27))))
+      (property "Value" "SGP40-D-R4" (at 0 17.78 0)  (effects (font (size 1.27 1.27))))
+      (symbol "SGP40-D-R4_0_1"
+        (rectangle (start -7.62 10.16) (end 7.62 -10.16)
+          (stroke (width 0.254) (type default)) (fill (type background))))
+      (symbol "SGP40-D-R4_1_1"
+        (pin power_in line (at -2.54 12.7 270) (length 2.54)
+      (name "VDD" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))) (pin power_in line (at -5.08 -12.7 90) (length 2.54)
+      (name "VSS" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 2.54 0) (length 2.54)
+      (name "SDA" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54)
+      (name "n/a" (effects (font (size 1.27 1.27))))
+      (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at 2.54 12.7 270) (length 2.54)
+      (name "VDDH" (effects (font (size 1.27 1.27))))
+      (number "5" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 -2.54 0) (length 2.54)
+      (name "SCL" (effects (font (size 1.27 1.27))))
+      (number "6" (effects (font (size 1.27 1.27))))) (pin power_in line (at 5.08 -12.7 90) (length 2.54)
+      (name "EP" (effects (font (size 1.27 1.27))))
+      (number "7" (effects (font (size 1.27 1.27))))))
+  (property "Footprint" "AI05:Sensirion_DFN-6-1EP_2.44x2.44mm_P0.8mm_SGP40" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Datasheet" "https://sensirion.com/resource/datasheet/sgp40" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Description" "SENSOR AIR QUALITY I2C OUTPUT" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MPN" "SGP40-D-R4" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "Sensirion AG" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "6.95 USD" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.com/en/products/detail/sensirion-ag/SGP40-D-R4/12820418" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "ki_fp_filters" "Sensirion_DFN-6-1EP_2.44x2.44mm_P0.8mm_SGP40" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol "BME280"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -8.89 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME280"
+			(at 7.62 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AI05:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"
+			(at 38.1 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SENSOR PRESSURE HUMIDITY TEMP"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Bosch pressure humidity temperature environment environmental measurement digital"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "BME280_0_1"
+			(rectangle
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "BME280_1_1"
+			(pin power_in line
+				(at -2.54 -15.24 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -7.62 180)
+				(length 5.08)
+				(name "CSB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -2.54 180)
+				(length 5.08)
+				(name "SDI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 2.54 180)
+				(length 5.08)
+				(name "SCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 7.62 180)
+				(length 5.08)
+				(name "SDO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 15.24 270)
+				(length 5.08)
+				(name "VDDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 15.24 270)
+				(length 5.08)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+
+  (property "MPN" "BME280" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "Bosch Sensortec" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "665 JPY" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.jp/ja/products/detail/bosch-sensortec/BME280/6136306" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol "BME680"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -8.89 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BME680"
+			(at 7.62 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AI05:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering_Recommended"
+			(at 36.83 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SENSOR GAS/HUM/PRES/TEMP I2C SPI"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Bosch gas pressure humidity temperature environment environmental measurement digital"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering_Recommended"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "BME680_0_1"
+			(rectangle
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "BME680_1_1"
+			(pin power_in line
+				(at -2.54 -15.24 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -7.62 180)
+				(length 5.08)
+				(name "CSB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -2.54 180)
+				(length 5.08)
+				(name "SDI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 2.54 180)
+				(length 5.08)
+				(name "SCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 7.62 180)
+				(length 5.08)
+				(name "SDO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 15.24 270)
+				(length 5.08)
+				(name "VDDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -15.24 90)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 15.24 270)
+				(length 5.08)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+
+  (property "MPN" "BME680" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "Bosch Sensortec" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "1511 JPY" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.jp/ja/products/detail/bosch-sensortec/BME680/7401321" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol "LIS2DW12TR"
+      (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -12.7 20.32 0)  (effects (font (size 1.27 1.27))))
+      (property "Value" "LIS2DW12TR" (at 0 22.86 0)  (effects (font (size 1.27 1.27))))
+      (symbol "LIS2DW12TR_0_1"
+        (rectangle (start -12.7 15.24) (end 12.7 -15.24)
+          (stroke (width 0.254) (type default)) (fill (type background))))
+      (symbol "LIS2DW12TR_1_1"
+        (pin input line (at -15.24 5.08 0) (length 2.54)
+      (name "SCL/SPC" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 -5.08 0) (length 2.54)
+      (name "~{CS}" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 0 0) (length 2.54)
+      (name "SDO/SA0" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 2.54 0) (length 2.54)
+      (name "SDA/SDI/SDO" (effects (font (size 1.27 1.27))))
+      (number "4" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 15.24 -5.08 180) (length 2.54)
+      (name "NC" (effects (font (size 1.27 1.27))))
+      (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at -5.08 -17.78 90) (length 2.54)
+      (name "GND" (effects (font (size 1.27 1.27))))
+      (number "6" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -17.78 90) (length 2.54)
+      (name "RES" (effects (font (size 1.27 1.27))))
+      (number "7" (effects (font (size 1.27 1.27))))) (pin power_in line (at 5.08 -17.78 90) (length 2.54)
+      (name "GND" (effects (font (size 1.27 1.27))))
+      (number "8" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 17.78 270) (length 2.54)
+      (name "VDD" (effects (font (size 1.27 1.27))))
+      (number "9" (effects (font (size 1.27 1.27))))) (pin power_in line (at 2.54 17.78 270) (length 2.54)
+      (name "VDD_IO" (effects (font (size 1.27 1.27))))
+      (number "10" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 2.54 180) (length 2.54)
+      (name "INT2" (effects (font (size 1.27 1.27))))
+      (number "11" (effects (font (size 1.27 1.27))))) (pin output line (at 15.24 5.08 180) (length 2.54)
+      (name "INT1" (effects (font (size 1.27 1.27))))
+      (number "12" (effects (font (size 1.27 1.27))))))
+  (property "Footprint" "AI05:LGA-12_2x2mm_P0.5mm" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Datasheet" "https://www.st.com/resource/en/datasheet/lis2dw12.pdf" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Description" "ACCEL 2-16G I2C/SPI 12LGA" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MPN" "LIS2DW12TR" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "STMicroelectronics" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "1.90 USD" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/LIS2DW12TR/7348326" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "ki_fp_filters" "LGA-12_2x2mm_P0.5mm" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+(symbol "SM04B-SRSS-TB"
+      (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at -7.62 12.7 0)  (effects (font (size 1.27 1.27))))
+      (property "Value" "SM04B-SRSS-TB" (at 0 15.24 0)  (effects (font (size 1.27 1.27))))
+      (symbol "SM04B-SRSS-TB_0_1"
+        (rectangle (start -7.62 7.62) (end 7.62 -7.62)
+          (stroke (width 0.254) (type default)) (fill (type background))))
+      (symbol "SM04B-SRSS-TB_1_1"
+        (pin passive line (at -10.16 5.08 0) (length 2.54)
+      (name "GND" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 2.54 0) (length 2.54)
+      (name "3V3" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 0 0) (length 2.54)
+      (name "SDA" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 -2.54 0) (length 2.54)
+      (name "SCL" (effects (font (size 1.27 1.27))))
+      (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -10.16 90) (length 2.54)
+      (name "MP" (effects (font (size 1.27 1.27))))
+      (number "MP" (effects (font (size 1.27 1.27))))))
+  (property "Footprint" "AI05:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Datasheet" "https://www.jst-mfg.com/product/pdf/jpn/SH.pdf" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "Description" "CONN HEADER SMD R/A 4POS 1MM" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MPN" "SM04B-SRSS-TB" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "MANUFACTURER" "JST Sales America Inc." (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE" "0.51 USD" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_QTY" "1" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "PRICE_DATE" "2026-09-19" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER" "Digi-Key" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "SUPPLIER_URL" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/SM04B-SRSS-TB/926710" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+
+  (property "ki_fp_filters" "JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+)
+)
