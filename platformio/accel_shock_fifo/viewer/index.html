@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI05 衝撃波形ビューア</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div class="eyebrow">LEAFONY / AI05 ENV SENSORS</div>
+      <h1>衝撃の波形を見る</h1>
+      <p>LIS2DW12が検出した衝撃の後を、FIFOから100サンプル記録します。</p>
+    </header>
+
+    <section class="panel connection" aria-labelledby="connection-title">
+      <div class="section-heading"><h2 id="connection-title">測定データを開く</h2><span class="chip">115200 bps</span></div>
+      <p class="hint"><code>accel_shock_fifo</code>を書き込んだAP03に接続します。書き込み前は接続を解除してください。</p>
+      <div class="toolbar">
+        <button id="connect" class="primary">シリアル接続</button>
+        <button id="disconnect" disabled>接続を解除</button>
+        <span class="toolbar-separator" aria-hidden="true"></span>
+        <button id="open-file">CSVを開く</button>
+        <input id="file-input" type="file" accept=".csv,.txt,text/csv,text/plain" hidden>
+        <button id="demo">デモを見る</button>
+      </div>
+      <p id="connection-status" class="connection-status" role="status">未接続</p>
+      <p id="support" class="hint">シリアル接続にはPC版ChromeまたはEdgeを使用してください。CSVとデモは接続なしで利用できます。</p>
+      <p class="hint">接続後にデータが来ない場合は、AP03を<strong>Run側</strong>へ戻して<strong>Reset</strong>を押してください。Program側ではサンプルは動作しません。ほかのシリアルモニターも閉じてください。</p>
+      <div id="error" class="error" role="alert" hidden></div>
+    </section>
+
+    <section class="panel waveform" aria-labelledby="wave-title">
+      <div class="section-heading wrap">
+        <div><div class="eyebrow">CAPTURE</div><h2 id="wave-title">加速度の時間変化</h2></div>
+        <div class="capture-actions"><label for="capture-select">記録</label><select id="capture-select" disabled><option>データなし</option></select><button id="save" disabled>CSVを保存</button></div>
+      </div>
+      <div id="source-banner" class="source-banner" hidden></div>
+      <div class="metrics">
+        <div><span>サンプル数 / 測定レート</span><strong id="sample-info">—</strong></div>
+        <div><span>合成加速度の最大値</span><strong id="peak-info">—</strong></div>
+        <div><span>測定レンジ</span><strong id="range-info">—</strong></div>
+      </div>
+      <div class="legend" aria-label="表示する系列">
+        <label class="x"><input type="checkbox" name="series" value="x" checked>X</label>
+        <label class="y"><input type="checkbox" name="series" value="y" checked>Y</label>
+        <label class="z"><input type="checkbox" name="series" value="z" checked>Z</label>
+        <label class="magnitude"><input type="checkbox" name="series" value="magnitude" checked>合成 √(X²+Y²+Z²)</label>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="chart" aria-label="加速度波形。値は下のサンプル選択とデータ表でも確認できます。" role="img"></canvas>
+        <div id="empty-chart" class="empty-chart">シリアル接続、CSV、またはデモを選ぶと<br>100サンプルの波形を表示します。</div>
+      </div>
+      <div class="sample-inspector">
+        <label for="sample-index">サンプル位置</label><input id="sample-index" type="range" min="0" max="99" value="0" disabled><output id="sample-value" for="sample-index">—</output>
+      </div>
+      <p class="hint">横軸は最初の有効サンプルを0 msとする、測定レートから求めた推定時刻です。衝撃検出の瞬間を0 msにしたものではありません。加速度と合成値には重力が含まれます。</p>
+      <p id="capture-info" class="hint"></p>
+      <p id="clipping" class="warning" hidden></p>
+      <details id="data-details">
+        <summary>100サンプルの数値を見る</summary>
+        <div class="table-scroll"><table><thead><tr><th scope="col">番号</th><th scope="col">時刻 (ms)</th><th scope="col">X (g)</th><th scope="col">Y (g)</th><th scope="col">Z (g)</th><th scope="col">合成 (g)</th></tr></thead><tbody id="data-rows"></tbody></table></div>
+      </details>
+    </section>
+    <footer>データはこのブラウザー内で処理します。外部への送信はありません。表示履歴は最新20件までで、ページを閉じると消えます。残したい記録はCSVで保存してください。</footer>
+  </main>
+</body>
+</html>

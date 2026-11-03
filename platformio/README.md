@@ -6,10 +6,18 @@
 | --- | --- | --- |
 | [read_sensors](read_sensors/README.md) | センサーを検出・初期化し、1秒ごとに測定値をシリアル出力 | AP03 STM32 |
 | [accel_wakeup](accel_wakeup/README.md) | 動き検出の割り込みで時刻・回数・検出軸・加速度をシリアル出力 | AP03 STM32 |
+| [accel_shock_fifo](accel_shock_fifo/README.md) | 衝撃検出後の加速度100点をFIFOで記録し、ブラウザーで波形表示・CSV保存 | AP03 STM32 |
 
 ```text
 platformio/
 ├── README.md
+├── accel_shock_fifo/
+│   ├── README.md
+│   ├── platformio.ini
+│   ├── images/
+│   ├── src/
+│   ├── tests/
+│   └── viewer/
 ├── accel_wakeup/
 │   ├── README.md
 │   ├── platformio.ini
