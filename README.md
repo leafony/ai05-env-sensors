@@ -31,7 +31,7 @@ SDA/SCL のプルアップはAP03 STM32リーフに搭載されているためDN
 
 ## サンプルコード
 
-[`platformio/`](platformio/README.md) にAP03 STM32向けのサンプルがあります。起動時にセンサーを検出・初期化し、1秒ごとに測定値をシリアル（115200 bps）へ出力します。未実装センサーはスキップします。
+[`platformio/`](platformio/README.md) にサンプルをフォルダごとの独立したPlatformIOプロジェクトとして配置しています。[`read_sensors`](platformio/read_sensors/README.md) はAP03 STM32向けに、起動時にセンサーを検出・初期化し、1秒ごとに測定値をシリアル（115200 bps）へ出力します。未実装センサーはスキップします。
 
 ## ライセンス
 
