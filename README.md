@@ -35,6 +35,8 @@ SDA/SCL のプルアップはAP03 STM32リーフに搭載されているためDN
 
 [`accel_wakeup`](platformio/accel_wakeup/README.md) はLIS2DW12の動き検出をD3の割り込みで受け取り、検出時刻・回数・軸・加速度をシリアル出力します。
 
+[`accel_shock_fifo`](platformio/accel_shock_fifo/README.md) は衝撃検出後の加速度100点をFIFOから取得します。付属のブラウザービューアで3軸の波形表示とCSV保存ができます。
+
 ## ライセンス
 
 MIT
