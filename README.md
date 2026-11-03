@@ -33,6 +33,8 @@ SDA/SCL のプルアップはAP03 STM32リーフに搭載されているためDN
 
 [`platformio/`](platformio/README.md) にサンプルをフォルダごとの独立したPlatformIOプロジェクトとして配置しています。[`read_sensors`](platformio/read_sensors/README.md) はAP03 STM32向けに、起動時にセンサーを検出・初期化し、1秒ごとに測定値をシリアル（115200 bps）へ出力します。未実装センサーはスキップします。
 
+[`accel_wakeup`](platformio/accel_wakeup/README.md) はLIS2DW12の動き検出をD3の割り込みで受け取り、検出時刻・回数・軸・加速度をシリアル出力します。
+
 ## ライセンス
 
 MIT
