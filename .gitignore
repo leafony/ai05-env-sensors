@@ -1,1 +1,6 @@
 .DS_Store
+
+# Keep the generated PDFs; ignore temporary export files.
+/output/*
+!/output/schematic.pdf
+!/output/layout.pdf
